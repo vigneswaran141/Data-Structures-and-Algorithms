@@ -4,9 +4,7 @@ struct node{
     int data;
     struct node *next;
 };
-
 struct node *head=NULL;
-
 void append(int data){
     struct node *newNode=malloc(sizeof(struct node));
     newNode->data=data;
@@ -22,7 +20,6 @@ void append(int data){
         temp->next=newNode;
     }
 }
-
 void display(){
     struct node *temp=head;
     while(temp!=NULL){
@@ -30,8 +27,6 @@ void display(){
         temp=temp->next;
     }
 }
-
-
 int main(){
     int n;
     int data;
